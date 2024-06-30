@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Ontologias - OWL </title>
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body>
+  <div class="header">
+    <h1> Ontologias - OWL (WEB ONTOLOGY LANGUAGE) </h1>
+  </div>
+
+  <div class="main-container">
+
+    <div class="card">
+      <h2 class="card-title"> RESUMO </h2>
+      <hr>
+      <p> As ontologias definem os termos usados para descrever e representar um domínio, ou seja, uma descrição de
+        conceitos e relacionamentos dos mesmos podendo ser utilizada por usuários ou agentes de software para que haja o
+        compartilhamento de informações dentro deste domínio. As ontologias podem ser usadas, dentre outras coisas, com
+        o propósito de melhorar a exatidão de buscas na Web, ou seja, a ontologia é uma das tecnologias primordiais para
+        a implementação da Web Semântica. Há diversas linguagens para construção de ontologias que fornecem diferentes
+        funcionalidades. O padrão mais recente de linguagens para ontologias é o OWL, desenvolvido no âmbito do World
+        Wide Web Consortium. OWL é uma linguagem de marcação semântica para publicação e compartilhamento de ontologias,
+        projetada para descrever classes e relacionamentos entre elas. Baseado na leitura de artigos e pesquisas em
+        diversos sites, este artigo tem o intuito de explorar os conceitos e funcionalidades dos temas abordados. </p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title"> 1. INTRODUÇÃO </h2>
+      <hr>
+      <p> As ontologias são muito importantes na organização e compartilhamento de conhecimento, oferecendo uma
+        estrutura formal para representar informações complexas. O Web Ontology Language é uma linguagem padrão
+        recomendada pelo W3C, feita para definir ontologias na web. De acordo com Coneglian (2018), a materialização da
+        Web Semântica é facilitada por um modelo de construção dinâmica de consultas baseado em mapeamento de
+        ontologias. Horridge (2008) destaca que o plugin Protégé-OWL 3.4 é prático e de grande importância para a
+        construção de ontologias OWL, destacando uma interface amigável com funcionalidades avançadas. </p>
+      <p> Além disso, Júnior (2012) relatou estudo de um caso que demonstra a aplicabilidade da ferramenta Protégé na
+        criação de ontologias OWL, realçando sua importância. Lima e Carvalho (2005) enfatizam a importância das
+        ontologias OWL na estruturação do conhecimento. Vieira (2024) inclui como a lógica de descrição em OWL enfatiza
+        uma compreensão mais certa dos dados. Este artigo explora os fundamentos de OWL, suas características principais
+        e as vantagens que oferece na construção de aplicações semânticas, destacando sua relevância no avanço da web
+        semântica e na integração de informação. </p>
+    </div>
+
+    <div class="card">
+
+      <h2 class="card-title"> 2. DESENVOLVIMENTO </h2>
+      <hr>
+      <div class="web-semantica">
+        <h3> 2.1 WEB SEMÂNTICA </h3>
+        <p> A Web Semântica busca melhorar a experiência do usuário durante a busca, retornando informações precisas de
+          acordo com suas necessidades, captando o significado das páginas para que os computadores possam processar e
+          relacionar conteúdos de várias fontes. É necessário incluir semântica na estrutura dos documentos disponíveis na
+          Web para que isso seja possível. A Web Semântica, descentralizada como a atual Web, busca consistência de
+          interconexões e permite seu crescimento exponencial. Enquanto a Web Sintática era para usuários, a Web Semântica
+          é para máquinas, possibilitando que agentes computacionais operem eficientemente sobre as informações e entendam
+          seus significados. A proposta é estruturar os dados nos sites para que os sistemas de busca identifiquem seu
+          conteúdo. Isso facilita a recuperação de informação relevante, pois os sistemas automatizados podem associar e
+          deduzir o conteúdo dos sites. Para isso, padrões tecnológicos são criados para facilitar a troca de dados entre
+          agentes pessoais e estabelecer uma língua franca para o compartilhamento de dados entre dispositivos e sistemas
+          de informação. É necessário acesso a informações estruturadas e regras de inferência para que o raciocínio
+          automatizado seja administrado na representação do conhecimento. </p>
+      </div>
+  
+      <div class="ontologias">
+        <h3> 2.2 ONTOLOGIAS </h3>
+        <p> Ontologia pode ser definido como uma especificação explícita e formal de uma conceitualização compartilhada,
+          compreende-se como um meio de conceituar elementos em uma estrutura que seja processável por máquinas e podem
+          ser usadas por pessoas, bases de dados e aplicações que precisam compartilhar informações de domínios. </p>
+        <p> Podemos destacar também o papel das ontologias na Web Semântica, quando se trata do entendimento das relações
+          existentes entre os dados, levando em consideração o domínio a qual pertence essas informações, evitando a
+          ambiguação e permitindo a realização de inferências e de diversos tipos de relações, entre outras funções.
+          Entretanto, para existir uma ontologia do ponto de vista computacional, é necessário que seja utilizada a
+          linguagem OWL, na qual busca representar as características e propriedades, descrevendo computacionalmente os
+          conceitos pertencentes as ontologias, possibilitando uma representação elaborada das relações entre as classes,
+          indivíduos e propriedades existentes, permitindo uma estrutura informacional complexa e clara. </p>
+        <p> Para tanto, as ontologias revelam-se numa solução promissora para fazer com que os computadores representem e
+          encontrem informações de uma forma intuitiva, assim como fazem os humanos. A representação das informações em
+          uma ontologia é organizada de forma hierárquica e nem sempre possuem a mesma estrutura, contudo existem
+          componentes comuns que estão presentes em sua maioria. Os elementos da linguagem OWL são essencialmente classes,
+          propriedades e indivíduos. As classes (organizadas em uma taxonomia) são representações concretas de um conceito
+          ou de uma entidade. Os indivíduos são os objetos de um domínio. E as propriedades são relações entre as classes
+          e atributos destas classes. Existem também as relações (representam os tipos de interação entre os conceitos de
+          um domínio), axiomas (usados para modelar sentenças sempre verdadeiras) e instâncias (utilizadas para
+          representar elementos específicos, ou seja, os próprios dados). Quanto à sua função as ontologias podem ser
+          classificadas em: Ontologias de Domínio, que são reutilizáveis no domínio, fornecem vocabulário sobre conceitos,
+          seus relacionamentos, sobre atividades e regras que os governam; Ontologias de tarefa, fornecem um vocabulário
+          sistematizado de termos, especificando tarefas que podem ou não estar no mesmo domínio; Ontologias Gerais,
+          incluem vocabulário relacionado a coisas, eventos, espaço, casualidade, comportamento, funções entre outros.
+        </p>
+        <p> As Ontologias podem ser visualizadas de forma gráfica, em forma de taxonomias e em forma de código fonte XML
+          estendida pelo o uso de RDF e OWL. </p>
+      </div>
+  
+      <div class="web-antology-language">
+        <h3> 2.3 OWL - Web Ontology Language </h3>
+        <p> OWL (Web Ontology Language) é uma linguagem utilizada para a definição e instanciação de ontologias na Web.
+          Com OWL, é possível formalizar um domínio específico, definindo classes e suas respectivas propriedades, além de
+          criar indivíduos e fazer afirmações sobre eles. Utilizando a semântica formal de OWL, também é possível
+          especificar como derivar consequências lógicas. Essas consequências são fatos que, embora não estejam
+          explicitamente presentes na ontologia, podem ser inferidos com base na semântica. </p>
+        <p>De acordo com o artigo OWL Web Ontology Language Overview escrito por Harmelen e McGuinness, a OWL possui três
+          sub-linguagens incrementais projetadas para serem usadas por diferentes comunidades de implementadores e
+          usuários: OWL Lite (Ontologias de Tarefas), OWL DL (Ontologia de Domínio) e OWL Full (Ontologias Genéricas).
+        </p>
+      </div>
+  
+      <div class="tres-especies-owl">
+        <h3> 2.4 As três espécies de OWL </h3>
+        <h4> 2.4.1 Ontologia de domínio </h4>
+        <p> São essenciais para criar sistemas de informação sofisticados e precisos. Elas são projetadas para capturar a
+          terminologia e a estrutura de um determinado campo de conhecimento, visto que elas representam conceitos muito
+          específicos e geralmente são incompatíveis entre si, facilitando a compreensão e a comunicação entre
+          especialistas e sistemas de informações.
+          A ontologia de domínio se destaca pela especificidade, detalhamento, consistência e padronização e
+          interoperabilidade, que seria a facilidade de troca de informações e a interoperabilidade entre diferentes
+          sistemas que operam no mesmo domínio. Já em relação aos benefícios delas se realça a melhoria na comunicação,
+          proporciona uma linguagem comum para especialistas e sistemas e sendo assim melhorando a comunicação e reduzindo
+          ambiguidades, reuso de conhecimento, que permite que o conhecimento estruturado seja reutilizado, integração com
+          sistemas, facilitam a integração de diferentes sistemas de informação e apoio à decisão, ajudam a construir
+          sistemas de apoio à decisão mais eficientes, baseados em um entendimento profundo e estruturado do domínio. </p>
+        <h4> 2.4.2 Ontologias genéricas (ou nível superior) </h4>
+        <p> São ontologias altamente abstratas e generalizadas. Não são focadas em um domínio específico, mas em fornecer
+          um framework comum e universal que pode ser utilizado como base para construir ontologias mais específicas. Elas
+          capturam conceitos muito gerais que são aplicáveis a uma ampla variedade de domínios, o que facilita a
+          interoperabilidade e a integração entre diferentes áreas de conhecimento. As ontologias genéricas se destacam
+          pela abstração elevada, base comum e interoperabilidade e flexibilidade. Em relação aos benefícios temos
+          consistência, reuso, interoperabilidade e escalabilidade. É utilizada em integração de dados, pesquisa
+          científica e desenvolvimento de software. Essas ontologias desempenham um papel fundamental na estruturação do
+          conhecimento de forma universal, proporcionando uma base sólida e consistente para o desenvolvimento de
+          ontologias mais detalhadas e específicas de domínio </p>
+        <h4> 2.4.3 Ontologias de tarefas (ou ontologias de processos) </h4>
+        <p> São ontologias que descrevem as atividades, ações, tarefas e processos em um determinado domínio. Modelam as
+          etapas, sequenciais, condições e inter relações envolvidas na realização de tarefas específicas. As ontologias
+          de tarefas são úteis para automação de processos, gestão de workflows e suporte à tomada de decisão. Suas
+          características são modelagem de processos, sequenciamento, automação e gestão e flexibilidade. Os benefícios de
+          utilizar elas são a automação de processos, consistência e padronização, gestão de workflow e apoio à decisão. É
+          utilizada na automação industrial, gestão de projetos e serviços de saúde. Em relação aos seus benefícios se
+          destaca a redução de erros, eficiência e qualidade do atendimento. As ontologias de tarefas são essenciais para
+          a modelagem, automação e gestão eficaz de processos em diversos domínios e proporcionam uma estrutura clara e
+          detalhada para a realização de atividades complexas. </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title"> 3. CONCLUSÃO </h2>
+      <hr>
+      <p> Por fim, as ontologias desempenham um papel fundamental na organização e compartilhamento de conhecimento, fornecendo uma estrutura formal para representar informações complexas de maneira que tanto humanos quanto máquinas possam interpretar e utilizar. A Web Ontology Language (OWL) é uma ferramenta essencial para a criação dessas ontologias, permitindo a definição de classes, propriedades e relações que formam a base de um entendimento compartilhado dentro de um domínio específico. </p>
+      <p> A Web Semântica, impulsionada pelas ontologias, visa melhorar a precisão das buscas e o processamento automatizado de informações na Web, permitindo que agentes de software compreendam e relacionem dados de diversas fontes. O OWL, com suas sub-linguagens OWL Lite, OWL DL e OWL Full, oferece a flexibilidade necessária para criar ontologias adaptadas às necessidades de diferentes comunidades de implementadores e usuários. </p>
+      <p> Portanto, as ontologias e a OWL são ferramentas indispensáveis para o avanço da Web Semântica, contribuindo para uma web mais inteligente, onde a informação é organizada de maneira a ser facilmente acessível e compreensível tanto para humanos quanto para máquinas. A evolução contínua dessas tecnologias promete transformar a forma como interagimos com o conhecimento na era digital. </p>
+    </div>
+
+    <div class="card">
+      <h2 class="card-title"> REFERÊNCIAS </h2>
+      <hr>
+      <p> CONEGLIAN, Caio Saraiva; SEGUNDO, José Eduardo Santarem. Materialização da Web Semântica: um modelo de
+        construção dinâmica de consultas baseadas em mapeamento de ontologias. Scielo Brasil, 2018. Disponível em: <a
+          href="https://www.scielo.br/j/pci/a/W45CkKWQw3rtXPwwXDkcSnf/#" target="_blank">
+          https://www.scielo.br/j/pci/a/W45CkKWQw3rtXPwwXDkcSnf/# </a>. Acesso em: 16 de jun. de 2024. </p>
+      <p> HORRIDGE, M. et al. Um guia prático para a construção de ontologias OWL, plugin Protégé-OWL 3.4. Trad. SOARES,
+        D.R.; ALMEIDA, M.B. Disponível em: <a href="https://mba.eci.ufmg.br/onto_owl/" target="_blank">
+          https://mba.eci.ufmg.br/onto_owl/ </a> , 2008. 100p. (Original inglês). Acesso em: 16 de jun. de 2024. </p>
+      <p> JUNIOR, Julio Lívero. Web Semântica, Ontologias e Linguagem OWL: Um estudo de caso sobre a ferramenta protégé.
+        FEMA. São Paulo, 2012, n.1, ed.1, p. 5-77, jun.2024. Disponível em: <a
+          href="https://cepein.femanet.com.br/BDigital/arqTccs/0911270541.pdf" target="_blank">
+          https://cepein.femanet.com.br/BDigital/arqTccs/0911270541.pdf </a>. Acesso em: 16 de jun. de 2024. </p>
+      <p> LIMA, Júnio César de; CARVALHO, Cedric L. de. Ontologias - OWL (Web Ontology Language). Instituto de
+        Informática. Goiás, 2005, n.1, ed.1, p. 2-22, jun. 2024. Disponível em: <a
+          href="https://ww2.inf.ufg.br/sites/default/files/uploads/relatorios-tecnicos/RT-INF_004-05.pdf"
+          target="_blank"> https://ww2.inf.ufg.br/sites/default/files/uploads/relatorios-tecnicos/RT-INF_004-05.pdf</a>.
+        Acesso em: 16 de jun. de 2024.</p>
+      <p> VIEIRA, Renata; SANTOS, Débora Abdalla dos; SILVA, Douglas Michaelsen da; SANTANA, Menandro Ribeiro. Web
+        Semântica: Ontologias, Lógica de descrição e inferência. Bahia, n.1, ed.1, p.1-38, jun. 2024. Disponível em: <a
+          href="https://www.inf.pucrs.br/~rvieira/cursos/webmidia.pdf" target="_blank">
+          https://www.inf.pucrs.br/~rvieira/cursos/webmidia.pdf</a>. Acesso em: 16 de jun. de 2024. </p>
+      <p> HARMELEN, F. V; MCGUINNESS, D. L. OWL Web Ontology Language Overview. <a
+          href="http://www.w3.org/TR/2004/REC-owl-features-20040210/" target="_blank">
+          http://www.w3.org/TR/2004/REC-owl-features-20040210/ </a> </p>
+    </div>
+
+  </div>
+
+  <div class="footer"> <span> Desenvolvido por <strong> Adanarys, Jade, Júlia e Leonardo Rossi </strong> </span> </div>
+</body>
+
+</html>
